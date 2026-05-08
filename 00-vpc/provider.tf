@@ -10,7 +10,7 @@ terraform {
     bucket = "81s-remote-state-dev-407"
     key    = "expense-vpc"
     region = "us-east-1"
-    dynamodb_table = "81s-locking-dev-407"
+    dynamodb_table = "81s-locking-dev-408"
   }
 }
 
