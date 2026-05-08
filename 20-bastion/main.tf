@@ -1,6 +1,6 @@
 module "bastion" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  
+  version = "5.7.0"
   ami = data.aws_redhat-9-devops-practice
   name = local.resource_name
 
