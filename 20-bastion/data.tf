@@ -8,14 +8,14 @@ data "aws_ssm_parameter" "public_subnet_ids" {
   name = "/${var.project_name}/${var.environment}/public_subnet_ids"
 }
 
-data "aws_ami" "joindevops" {
+data "aws_ami" "redhat-9-devops-practice" {
 
 	most_recent      = true
 	owners = ["973714476881"]
 	
 	filter {
 		name   = "name"
-		values = ["RHEL-9-DevOps-Practice"]
+		values = ["ami-0220d79f3f480ecf5"]
 	}
 	
 	filter {
