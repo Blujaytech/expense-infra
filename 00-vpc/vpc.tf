@@ -1,5 +1,5 @@
 module "vpc" {
-  source = ""git::https://github.com/Blujaytech/expense-infra.git//00-vpc""
+  source = "git::https://github.com/Blujaytech/expense-infra.git//00-vpc"
 
   vpc_cidr              = var.vpc_cidr
   project_name          = var.project_name
